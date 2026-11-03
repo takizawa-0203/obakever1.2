@@ -21,23 +21,33 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'dgg0fka',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
 </head>
 <body>
 
     <header>
-        <h1>サイトタイトル</h1>
+        <h1 class="top_logo"><img src="/img/obake_logo.png" alt="おばけ調査隊ロゴ"></h1>
     </header>
 
     <main>
         <section>
-            <h2>見出し</h2>
-            <p>ここにコンテンツを追加します。</p>
+        
+        </section>
+        <section>
+        <div class="start_button"><a href="/home.html"><p>調査をはじめる</p></a></div>
         </section>
     </main>
 
-    <!-- <footer>
-        <p>&copy; 2027 OBAKE TYOUSATAI</p>
-    </footer> -->
+    
 
     <script src="js/app.js"></script>
 </body>

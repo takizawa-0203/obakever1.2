@@ -1,10 +1,13 @@
+/* -------------------------------------------- */
+/* ▼全体設定 */
+/* -------------------------------------------- */
 * {
     box-sizing: border-box;
 }
 
 html {
     font-size: clamp(12px, 1.5vw, 16px);
-    font-family: "Noto Sans JP", "Alegreya Sans", sans-serif;
+    font-family: sicprintemps,"Noto Sans JP", sans-serif;
     font-feature-settings: "palt";
     width: 100%;
     height: 100%;
@@ -16,13 +19,67 @@ body{
     max-width: 440px;
     background-color: #2e3350;
     margin: 0 auto;
-    padding: 0;     
+    padding: 20px;     
     box-sizing: border-box;
     width: 100%;
     min-height: 100vh;
     min-height: 100dvh;
     background-image: url(../img/start_back.png);
     background-position: center;
-    background-size: cover;
+    background-size: cover;  
     background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------------------------------- */
+/* ▼スタート画面*/
+/* -------------------------------------------- */
+.top_logo img{
+    text-align: center;
+    margin: 0;
+    padding: 5% 7%;
+}
+
+.start_button{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    bottom: 6%;
+    z-index: 999;
+    width: calc(100% - 40px);
+}
+
+.start_button p{
+    text-align: center;
+    margin: 0;
+    padding: 5% 7%;
+    color: #D9FFF5;
+    font-size: 2.2rem;
+    letter-spacing: 0.1em;
+    background-color: #1A1C4A;
+    border: 2.5px solid #D9FFF5;
+    border-radius: 100px;
+    box-shadow: inset 10px 0px 20px 0px rgba(50, 97, 153, 1), inset -10px 0px 20px 0px rgba(50, 97, 153, 1), 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザイン */
+/* -------------------------------------------- */
+@media (min-width: 768px) {
+ 
+}
+
+/* ------------------------------------ */
+/* ▼PC用デザイン */
+/* ------------------------------------ */
+@media (min-width: 1024px) {
+    .top_logo img{
+    text-align: center;
+    margin: 0;
+    padding: 8% 10%;
+    }
 }
