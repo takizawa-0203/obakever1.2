@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: clamp(12px, 1.5vw, 16px);
+    font-family: "Noto Sans JP", "Alegreya Sans", sans-serif;
+    font-feature-settings: "palt";
+    width: 100vw;
+    height: 100vh;
+    overflow-x: clip;
+    background-color: black;
+}
+
+body{
+    max-width: 440px;
+    background-color: aliceblue;
+    margin: 0 auto;  
+    padding: 0;     
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/start_back.png);
+    background-position: center;
+    background-size: cover;
+}
+
