@@ -45,16 +45,18 @@ a{
 .top_logo img {
     position: relative;
     text-align: center;
-    margin: 0;
-    padding: 20px 7% 0; /* 必要に応じて上部にパディングを追加 */
+    margin: 0 auto;
+    padding: 20px 7% 0; 
     z-index: 998;
+    width: 88%;
+    height: auto;
 }
 
 .start_button {
     text-align: center;
     margin: 0 auto;
     position: absolute;
-    bottom: 8%; 
+    bottom: 10%; 
     left: 0;
     right: 0;
     z-index: 999;
