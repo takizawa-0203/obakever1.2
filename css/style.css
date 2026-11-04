@@ -16,6 +16,7 @@ html {
 }
 
 body{
+    position: relative;
     max-width: 440px;
     background-color: #2e3350;
     margin: 0 auto;
@@ -39,17 +40,20 @@ a{
 /* ▼スタート画面*/
 /* -------------------------------------------- */
 .top_logo img{
+    position: relative;
     text-align: center;
     margin: 0;
-    padding: 5% 7%;
+    padding: 2% 7%;
+    z-index: 998;
 }
 
 .start_button{
     text-align: center;
     margin: 0;
     position: absolute;
-    bottom: 6%;
+    bottom: 9%;
     z-index: 999;
+    max-width: 400px;
     width: calc(100% - 40px);
 }
 
@@ -66,6 +70,34 @@ a{
     box-shadow: inset 10px 0px 20px 0px rgba(50, 97, 153, 1), inset -10px 0px 20px 0px rgba(50, 97, 153, 1), 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.top_investigator{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 53%;
+    z-index: 1;
+}
+
+.top_ghost{
+    position: absolute;
+    inset: 0;       
+    z-index: 0;
+    pointer-events: none;
+}
+
+.top_ghost_img {
+    position: absolute;
+    height: auto;
+}
+
+.top_ghost_img.ghost01 { top: 30%;  left: 3%;  width: 50%; }
+.top_ghost_img.ghost02 { top: 48%; left: 2%;  width: 38%; }
+.top_ghost_img.ghost03 { top: 65%; left: 2%; width: 30%; }
+.top_ghost_img.ghost04 { top: 28%;  left:48%; width: 52%; }
+.top_ghost_img.ghost05 { top: 50%; left: 70%; width: 30%; }
+.top_ghost_img.ghost06 { top: 68%; left: 70%; width:30%; }  
 /* -------------------------------------------- */
 /* ▼タブレット用デザイン */
 /* -------------------------------------------- */
@@ -82,4 +114,5 @@ a{
     margin: 0;
     padding: 8% 10%;
     }
+
 }
