@@ -1,4 +1,4 @@
-const CACHE_NAME = 'obake-search-v8';
+const CACHE_NAME = 'obake-search-v9';
 const APP_SHELL = [
   './',
   './index.html',

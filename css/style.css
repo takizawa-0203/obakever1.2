@@ -7,7 +7,7 @@
 
 html {
     font-size: clamp(12px, 1.5vw, 16px);
-    font-family: sicprintemps,"Noto Sans JP", sans-serif;
+    font-family: sicprintemps, "Noto Sans JP", sans-serif;
     font-feature-settings: "palt";
     width: 100%;
     height: 100%;
@@ -15,12 +15,12 @@ html {
     background-color: #2e3350;
 }
 
-body{
+body {
     position: relative;
     max-width: 440px;
     background-color: #2e3350;
     margin: 0 auto;
-    padding: 20px;     
+    padding: 0; 
     box-sizing: border-box;
     width: 100%;
     min-height: 100vh;
@@ -29,6 +29,7 @@ body{
     background-position: center;
     background-size: cover;  
     background-repeat: no-repeat;
+    overflow: hidden; 
 }
 
 a{
@@ -36,25 +37,29 @@ a{
     color: inherit;
 }
 
+
+
 /* -------------------------------------------- */
 /* ▼スタート画面*/
 /* -------------------------------------------- */
-.top_logo img{
+.top_logo img {
     position: relative;
     text-align: center;
     margin: 0;
-    padding: 2% 7%;
+    padding: 20px 7% 0; /* 必要に応じて上部にパディングを追加 */
     z-index: 998;
 }
 
-.start_button{
+.start_button {
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     position: absolute;
-    bottom: 9%;
+    bottom: 8%; 
+    left: 0;
+    right: 0;
     z-index: 999;
     max-width: 400px;
-    width: calc(100% - 40px);
+    width: calc(100% - 40px); 
 }
 
 .start_button p{
@@ -96,8 +101,10 @@ a{
 .top_ghost_img.ghost02 { top: 48%; left: 2%;  width: 38%; }
 .top_ghost_img.ghost03 { top: 65%; left: 2%; width: 30%; }
 .top_ghost_img.ghost04 { top: 28%;  left:48%; width: 52%; }
-.top_ghost_img.ghost05 { top: 50%; left: 70%; width: 30%; }
+.top_ghost_img.ghost05 { top: 50%; left: 70%; width: 30%; rotate: 20deg; }
 .top_ghost_img.ghost06 { top: 68%; left: 70%; width:30%; }  
+
+
 /* -------------------------------------------- */
 /* ▼タブレット用デザイン */
 /* -------------------------------------------- */
